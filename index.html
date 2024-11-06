@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="topBar"
+        class="h-10 fixed w-full bg-[var(--color-primary)] flex items-center justify-center sm:justify-between px-[7%] lg:px-[7%] xl:px-[10%] z-[100]">
+        <div class="flex items-center justify-between gap-5">
+            <div class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out"><span
+                    class="text-[var(--color-secondary)]"><i class="fa-solid fa-location-dot"></i></span>76 San
+                Fransisco Street. New York</div>
+            <div class="text-[var(--color-textSecondary)] hidden md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out"><span
+                    class="text-[var(--color-secondary)]"><i
+                        class="fa-solid fa-envelope"></i></span>needhelp@company.com</div>
+        </div>
+        <div class="flex items-center hidden sm:flex text-white justify-between gap-4">
+            <i class="fab fa-facebook-f text-[var(--color-textprimary)]  hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i class="fab fa-instagram text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i class="fab fa-twitter text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i class="fa-brands fa-linkedin-in text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+        </div>
+    </div>
+    <header id="mainHeader" class="fixed top-10 left-0 w-full z-[100] transition-transform duration-300 ease-in-out">
+        <div
+            class="flex items-center justify-between px-[7%] h-20 md:h-23 w-full bg-transparent lg:px-[7%] xl:px-[10%] border-b border-[#2C2F39]">
+            <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+            <div class="flex items-center justify-between">
+                <ul class="lg:flex text-xl items-center justify-between gap-14 hidden">
+                    <li class="text-white text-md cursor-pointer underline-animation">
+                        <a href="#home" class="no-underline text-white">
+                            <span id="underline">Home</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="#about" class="no-underline text-white">
+                            <span id="underline">About</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer relative group py-6">
+                        <a href="#services" class="no-underline text-white relative">
+                            <span id="underline">Services</span>
+                        </a>                        
+                        <!-- Dropdown Menu -->
+                        <ul class="absolute left-0 mt-[26px] bg-black overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[300px] flex-col min-w-[200px]">
+                            <li><a href="#web-design" class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">SERVICE</a></li>
+                            <li><a href="#seo" class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">SERVICE2</a></li>
+                            <li><a href="#content-writing" class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">SERVICE3</a></li>
+                        </ul>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="#shop" class="no-underline text-white">
+                            <span id="underline">Shop</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="#blog" class="no-underline text-white">
+                            <span id="underline">Blog</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="#contact" class="no-underline text-white">
+                            <span id="underline">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-8">
+                <div class="items-center hidden md:flex text-white gap-7 text-xl">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div id="menuIcon"
+                    class="h-12 w-12 bg-[var(--color-secondary)] flex items-center justify-center text-white text-xl md:text-2xl lg:hidden cursor-pointer">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="menuContainer" class="lg:hidden w-[350px] sm:w-[400px] md:w-[450px] bg-black overflow-y-auto right-0 left-auto h-screen fixed z-[100] p-10 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class=" flex items-center justify-between ">
+            <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+            <div id="closeIcon"
+                class="h-12 w-12 bg-white flex items-center justify-center text-black text-xl md:text-2xl lg:hidden cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <p class="text-[var(--color-textSecondary)] mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus
+            dolores nisi esse mollitia? Pariatur est, dicta vitae placeat dolor maiores expedita aut quae, sint ipsa
+            harum aliquam repellat nesciunt.
+        </p>
+        <div class="mt-10">
+            <ul class="list-none flex flex-col gap-3">
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Home</li>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">About</li>
+                <div>
+                    <div class="flex items-center justify-between">
+                        <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Services</li>
+                        <div id="arrowToggle"
+                            class="h-5 w-5 border border-white hover:border-[var(--color-secondary)] text-white hover:text-[var(--color-secondary)] flex items-center justify-center text-[12px] cursor-pointer mr-4">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div id="options" class="hidden text-white text-md ">
+                        <p>Option 1</p>
+                        <p>Option 2</p>
+                    </div>
+                </div>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Shop</li>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Blog</li>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Contact</li>
+            </ul>
+        </div>
+        <p class="text-white text-lg mt-10">Contact Us</p>
+        <div class="mt-5 text-white flex flex-col gap-3">
+
+            <!-- Address with Location Icon -->
+            <div class="flex items-start gap-4 ">
+                <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0">
+                    <i class="fa-solid fa-location-dot text-black"></i>
+                </a>
+                <p class="flex-1 hover:text-[var(--color-secondary)] cursor-pointer">New York USA</p>
+            </div>
+
+            <!-- Phone with Phone Icon -->
+            <div class="flex items-center gap-4 ">
+                <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                    <i class="fa-solid fa-phone text-black"></i>
+                </div>
+                <p class="hover:text-[var(--color-secondary)] cursor-pointer">+000 123 456 789</p>
+            </div>
+
+            <!-- Email with Envelope Icon -->
+            <div class="flex items-center gap-4 ">
+                <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                    <i class="fa-solid fa-envelope text-black"></i>
+                </div>
+                <p class="hover:text-[var(--color-secondary)] cursor-pointer">info@example.com</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-[2%] mt-10 text-xl">
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-facebook-f text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-instagram text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-twitter text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fa-regular fa-envelope text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <div id="hero" class="w-full relative z-1">
+            <div class="swiper default-carousel swiper-container ">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide"
+                        style="background-image: url('./assets/images/hero4.png'); background-size: cover; background-position: center;">
+                        <div class="relative h-full">
+                            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
+                            <div class="flex flex-col justify-center items-start ml-[10%] top-[38%] w-[50%] relative z-10">
+                                <!-- Text container -->
+                                <h1 class="md:text-6xl text-white text-[2.5rem]">Electrical is All About Electricians</h1>
+                                <button class="w-52 h-[60px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-black hover:bg-[#fff] transition duration-300 ease-in-out">
+                                    DISCOVER MORE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./assets/images/hero2.png'); background-size: cover; background-position: center;">
+                        <div class="relative h-full">
+                            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
+                            <div class="flex flex-col justify-center items-start ml-[10%] top-[38%] w-[50%] relative z-10">
+                                <!-- Text container -->
+                                <h1 class="md:text-6xl text-white text-[2.5rem]">Electrical is All About Electricians</h1>
+                                <button class="w-52 h-[60px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-black hover:bg-[#fff] transition duration-300 ease-in-out">
+                                    DISCOVER MORE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('./assets/images/hero3.png'); background-size: cover; background-position: center;">
+                        <div class="relative h-full">
+                            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
+                            <div class="flex flex-col justify-center items-start ml-[10%] top-[38%] w-[50%] relative z-10">
+                                <!-- Text container -->
+                                <h1 class="md:text-6xl text-white text-[2.5rem]">Electrical is All About Electricians</h1>
+                                <button class="w-52 h-[60px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-black hover:bg-[#fff] transition duration-300 ease-in-out">
+                                    DISCOVER MORE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[70%] flex flex-col justify-center items-center max-sm:gap-8 hidden lg:flex">
+                <!-- Slider controls -->
+                <div class="flex items-center gap-[19px]">
+                    <button id="slider-button-left"
+                        class="swiper-button-prev group flex justify-center items-center  w-16 h-9 transition-all duration-500">
+                        <svg class="h-6 w-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button id="slider-button-right"
+                        class="swiper-button-next group flex justify-center items-center  w-16 h-9 transition-all duration-500">
+                        <svg class="h-6 w-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden xl:flex">
+                <div class="swiper-pagination mb-[40vh]"></div>
+            </div>
+        </div>
+    </section>
+        
+    <script src="./script/script.js"></script>
+</body>
+
+
+</html>
