@@ -20,16 +20,18 @@
 
 <body>
     <div id="topBar"
-        class="h-10 fixed w-full bg-[var(--color-primary)] flex items-center justify-center sm:justify-between px-[7%] lg:px-[7%] xl:px-[10%] z-[100]">
+        class="h-10 fixed w-full bg-[var(--color-primary)] flex items-center justify-center sm:justify-between px-[7%] lg:px-[7%] xl:px-[7%] z-[100]">
         <div class="flex items-center justify-between gap-5">
             <div
                 class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
                 <span class="text-[var(--color-secondary)]"><i class="fa-solid fa-location-dot"></i></span>76 San
-                Fransisco Street. New York</div>
+                Fransisco Street. New York
+            </div>
             <div
                 class="text-[var(--color-textSecondary)] hidden md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
                 <span class="text-[var(--color-secondary)]"><i
-                        class="fa-solid fa-envelope"></i></span>needhelp@company.com</div>
+                        class="fa-solid fa-envelope"></i></span>needhelp@company.com
+            </div>
         </div>
         <div class="flex items-center hidden sm:flex text-white justify-between gap-4">
             <i
@@ -44,7 +46,7 @@
     </div>
     <header id="mainHeader" class="fixed top-10 left-0 w-full z-[100] transition-transform duration-300 ease-in-out">
         <div
-            class="flex items-center justify-between px-[7%] h-20 md:h-23 w-full bg-transparent lg:px-[7%] xl:px-[10%] border-b border-[#2C2F39]">
+            class="flex items-center justify-between px-[7%] h-20 md:h-23 w-full bg-transparent lg:px-[7%] xl:px-[7%] border-b border-[#2C2F39]">
             <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
             <div class="flex items-center justify-between">
                 <ul class="lg:flex text-xl items-center justify-between gap-14 hidden">
@@ -64,21 +66,36 @@
                         </a>
                         <!-- Dropdown Menu -->
                         <ul
-                            class="absolute left-0 mt-[26px] bg-black overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[300px] flex-col min-w-[200px]">
+                            class="absolute left-0 mt-[26px] bg-black overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[200px]">
                             <li><a href="#web-design"
-                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">SERVICE</a>
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Wiring
+                                    and Rewiring Services</a>
                             </li>
                             <li><a href="#seo"
-                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">SERVICE2</a>
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Electrical
+                                    Panel Upgrades</a>
                             </li>
                             <li><a href="#content-writing"
-                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">SERVICE3</a>
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Lighting
+                                    and Repairs</a>
+                            </li>
+                            <li><a href="#seo"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Electrical
+                                    Safety Inspections</a>
+                            </li>
+                            <li><a href="#seo"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Surge
+                                    Protection</a>
+                            </li>
+                            <li><a href="#seo"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Troubleshooting
+                                    and Repairs</a>
                             </li>
                         </ul>
                     </li>
                     <li class="text-white text-md cursor-pointer">
                         <a href="#shop" class="no-underline text-white">
-                            <span id="underline">Shop</span>
+                            <span id="underline">Gallery</span>
                         </a>
                     </li>
                     <li class="text-white text-md cursor-pointer">
@@ -124,25 +141,48 @@
             <ul class="list-none flex flex-col gap-3">
                 <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Home</li>
                 <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">About</li>
-                <div>
+                <div class="group">
                     <div class="flex items-center justify-between">
-                        <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Services</li>
+                        <li class="text-white text-md group-hover:text-[var(--color-secondary)] cursor-pointer">Services
+                        </li>
                         <div id="arrowToggle"
-                            class="h-5 w-5 border border-white hover:border-[var(--color-secondary)] text-white hover:text-[var(--color-secondary)] flex items-center justify-center text-[12px] cursor-pointer mr-4">
+                            class="h-5 w-5 border border-white group-hover:border-[var(--color-secondary)] text-white group-hover:text-[var(--color-secondary)] flex items-center justify-center text-[12px] cursor-pointer mr-4">
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
                     </div>
                     <div id="options" class="hidden text-white text-md ">
-                        <p>Option 1</p>
-                        <p>Option 2</p>
+                        <li><a href="#web-design"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Wiring
+                                and Rewiring Services</a>
+                        </li>
+                        <li><a href="#seo"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical
+                                Panel Upgrades</a>
+                        </li>
+                        <li><a href="#content-writing"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Lighting
+                                and Repairs</a>
+                        </li>
+                        <li><a href="#seo"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical
+                                Safety Inspections</a>
+                        </li>
+                        <li><a href="#seo"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Surge
+                                Protection</a>
+                        </li>
+                        <li><a href="#seo"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Troubleshooting
+                                and Repairs</a>
+                        </li>
                     </div>
                 </div>
-                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Shop</li>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Gallery</li>
                 <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Blog</li>
                 <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Contact</li>
             </ul>
         </div>
-        <p class="text-white text-lg mt-10">Contact Us</p>
+        <p class="text-white text-lg mt-10">Contact</p>
         <div class="mt-5 text-white flex flex-col gap-3">
 
             <!-- Address with Location Icon -->
@@ -150,7 +190,7 @@
                 <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0">
                     <i class="fa-solid fa-location-dot text-black"></i>
                 </a>
-                <p class="flex-1 hover:text-[var(--color-secondary)] cursor-pointer">New York USA</p>
+                <p class="flex-1 hover:text-[var(--color-secondary)] cursor-pointer">San Fransisco, USA</p>
             </div>
 
             <!-- Phone with Phone Icon -->
@@ -199,7 +239,7 @@
                         <div class="relative h-full">
                             <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
                             <div
-                                class="flex flex-col justify-center items-start ml-[10%] top-[38%] w-[50%] relative z-10">
+                                class="flex flex-col justify-center items-start ml-[7%] top-[38%] w-[50%] relative z-10">
                                 <!-- Text container -->
                                 <h1 class="md:text-6xl text-white text-[2.5rem]">Electrical is All About Electricians
                                 </h1>
@@ -215,7 +255,7 @@
                         <div class="relative h-full">
                             <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
                             <div
-                                class="flex flex-col justify-center items-start ml-[10%] top-[38%] w-[50%] relative z-10">
+                                class="flex flex-col justify-center items-start ml-[7%] top-[38%] w-[50%] relative z-10">
                                 <!-- Text container -->
                                 <h1 class="md:text-6xl text-white text-[2.5rem]">Electrical is All About Electricians
                                 </h1>
@@ -231,7 +271,7 @@
                         <div class="relative h-full">
                             <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
                             <div
-                                class="flex flex-col justify-center items-start ml-[10%] top-[38%] w-[50%] relative z-10">
+                                class="flex flex-col justify-center items-start ml-[7%] top-[38%] w-[50%] relative z-10">
                                 <!-- Text container -->
                                 <h1 class="md:text-6xl text-white text-[2.5rem]">Electrical is All About Electricians
                                 </h1>
@@ -273,133 +313,130 @@
 
     <!-- Service Section -->
     <section class="relative">
-        <div class="bg-[var(--color-bgPrimary)] px-[7%] lg:px-[7%] xl:px-[10%] flex flex-col text-center z-1">
+        <div class="bg-[var(--color-bgPrimary)] px-[7%] lg:px-[7%] xl:px-[7%] flex flex-col text-center z-1">
             <h2 class="text-4xl font-semibold text-black mt-16">We provide professional</h2>
             <h2 class="text-4xl font-semibold text-black">electrical services</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-24">
                 <!-- Row 1 -->
-                <div>
+                <div
+                    class=" group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[300px] p-6 text-white shadow-md cursor-pointer">
                     <div
-                        class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[200px] p-6 text-white shadow-md cursor-pointer">
-                        <div
-                            class="flex items-center justify-center w-16 h-16 bg-[var(--color-secondary)] mb-2 transition-colors duration-300 group-hover:bg-black">
-                            <i class="fa-solid fa-plug text-3xl"></i>
-                        </div>
-                        <p class="text-2xl mt-4 text-black">Wiring and Rewiring Services</p>
-                        <p class="mt-2 text-[var(--color-textTertiary)]">Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur
-                            quae dicta asperiores alias inventore.</p>
-                        <div class="mt-auto"></div>
-                        <a href="#" class="no-underline cursor-pointer mt-4 mb-2">
-                            <p
-                                class="mt-2 flex items-center justify-center gap-2 text-[18px] hover:underline text-black">
-                                Read More
-                                <span>
-                                    <i class="fa-solid fa-arrow-up rotate-30 text-lg"></i>
-                                </span>
-                            </p>
-                        </a>
+                        class="flex items-center justify-center w-16 h-16 bg-[var(--color-secondary)] mb-2 transition-colors duration-300 group-hover:bg-black">
+                        <i class="fa-solid fa-plug text-3xl"></i>
                     </div>
+                    <p class="text-xl mt-2 text-black">Wiring and Rewiring Services</p>
+                    <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae
+                        dicta asperiores alias inventore.</p>
+                    <div class="mt-auto"></div>
+                    <a href="#" class="no-underline cursor-pointer mt-2 mb-2">
+                        <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
+                            Read More
+                            <span>
+                                <i class="fa-solid fa-arrow-up rotate-30 text-md"></i>
+                            </span>
+                        </p>
+                    </a>
                 </div>
 
                 <div
-                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[200px] p-6  text-white shadow-md cursor-pointer">
+                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[300px] p-6  text-white shadow-md cursor-pointer">
                     <div
                         class="flex items-center justify-center w-16 h-16 bg-[var(--color-secondary)]  mb-2 transition-colors duration-300 group-hover:bg-black">
                         <i class="fa-solid fa-gauge-high text-3xl"></i>
                     </div>
-                    <p class="text-2xl mt-4 text-black">Electrical Panel Upgrades</p>
-                    <p class="mt-2 text-[var(--color-textTertiary)]">Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Sed tempora numquam saepe dolorem fugit dicta asperiores alias inventore.</p>
+                    <p class="text-xl mt-2 text-black">Electrical Panel Upgrades</p>
+                    <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Sed tempora numquam saepe dolorem fugit dicta asperiores alias inventore.</p>
                     <div class="mt-auto"></div>
                     <a href="#" class="no-underline cursor-pointer mt-4 mb-2">
-                        <p class="mt-2 flex items-center justify-center gap-2 text-[18px] hover:underline text-black">
+                        <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
                             Read More
                             <span>
-                                <i class="fa-solid fa-arrow-up rotate-30 text-lg"></i>
+                                <i class="fa-solid fa-arrow-up rotate-30 text-md"></i>
                             </span>
                         </p>
                     </a>
                 </div>
 
                 <div
-                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[200px] p-6  text-white shadow-md cursor-pointer">
+                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[300px] p-6  text-white shadow-md cursor-pointer">
                     <div
                         class="flex items-center justify-center w-16 h-16 bg-[var(--color-secondary)]  mb-2 transition-colors duration-300 group-hover:bg-black">
                         <i class="fa-solid fa-lightbulb text-3xl"></i>
                     </div>
-                    <p class="text-2xl mt-4 text-black">Lighting and Repairs</p>
-                    <p class="mt-2 text-[var(--color-textTertiary)]">Lorem ipsum, dolor sit amet consectetr</p>
+                    <p class="text-xl mt-2 text-black">Lighting and Repairs</p>
+                    <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetr
+                    </p>
                     <div class="mt-auto"></div>
                     <a href="#" class="no-underline cursor-pointer mt-4 mb-2">
-                        <p class="mt-2 flex items-center justify-center gap-2 text-[18px] hover:underline text-black">
+                        <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
                             Read More
                             <span>
-                                <i class="fa-solid fa-arrow-up rotate-30 text-lg"></i>
+                                <i class="fa-solid fa-arrow-up rotate-30 text-md"></i>
                             </span>
                         </p>
                     </a>
                 </div>
 
-                <!-- Row 2 -->
                 <div
-                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[200px] p-6  text-white shadow-md cursor-pointer">
+                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[300px] p-6  text-white shadow-md cursor-pointer">
                     <div
                         class="flex items-center justify-center w-16 h-16 bg-[var(--color-secondary)]  mb-2 transition-colors duration-300 group-hover:bg-black">
                         <i class="fa-solid fa-user-shield text-3xl"></i>
                     </div>
-                    <p class="text-2xl mt-4 text-black">Electrical Safety Inspections</p>
-                    <p class="mt-2 text-[var(--color-textTertiary)]">Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae dicta
-                        asperiores alias inventore.</p>
+                    <p class="text-xl mt-2 text-black">Electrical Safety Inspections</p>
+                    <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae
+                        dicta asperiores alias inventore.</p>
                     <div class="mt-auto"></div>
                     <a href="#" class="no-underline cursor-pointer mt-4 mb-2">
-                        <p class="mt-2 flex items-center justify-center gap-2 text-[18px] hover:underline text-black">
+                        <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
                             Read More
                             <span>
-                                <i class="fa-solid fa-arrow-up rotate-30 text-lg"></i>
+                                <i class="fa-solid fa-arrow-up rotate-30 text-md"></i>
                             </span>
                         </p>
                     </a>
                 </div>
 
                 <div
-                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[200px] p-6  text-white shadow-md cursor-pointer">
+                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[300px] p-6  text-white shadow-md cursor-pointer">
                     <div
                         class="flex items-center justify-center w-16 h-16 bg-[var(--color-secondary)]  mb-2 transition-colors duration-300 group-hover:bg-black">
                         <i class="fa-solid fa-bolt text-3xl"></i>
                     </div>
-                    <p class="text-2xl mt-4 text-black">Surge Protection</p>
-                    <p class="mt-2 text-[var(--color-textTertiary)]">Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae dicta
-                        asperiores alias inventore.</p>
+                    <p class="text-xl mt-2 text-black">Surge Protection</p>
+                    <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae
+                        dicta asperiores alias inventore.</p>
                     <div class="mt-auto"></div>
                     <a href="#" class="no-underline cursor-pointer mt-4 mb-2">
-                        <p class="mt-2 flex items-center justify-center gap-2 text-[18px] hover:underline text-black">
+                        <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
                             Read More
                             <span>
-                                <i class="fa-solid fa-arrow-up rotate-30 text-lg"></i>
+                                <i class="fa-solid fa-arrow-up rotate-30 text-md"></i>
                             </span>
                         </p>
                     </a>
                 </div>
 
                 <div
-                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[200px] p-6  text-white shadow-md cursor-pointer">
+                    class="group flex flex-col items-start text-left justify-center bg-[#fff] min-h-[300px] p-6  text-white shadow-md cursor-pointer">
                     <div
                         class="flex items-center justify-center w-16 h-16 bg-[var(--color-secondary)]  mb-2 transition-colors duration-300 group-hover:bg-black">
                         <i class="fa-solid fa-screwdriver-wrench text-3xl"></i>
                     </div>
-                    <p class="text-2xl mt-4 text-black">Troubleshooting and Repair</p>
-                    <p class="mt-2 text-[var(--color-textTertiary)]">Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae animi! Sed
-                        tempora numquam.</p>
+                    <p class="text-xl mt-2 text-black">Troubleshooting and Repair</p>
+                    <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae
+                        animi! Sed tempora numquam.</p>
                     <div class="mt-auto"></div>
                     <a href="#" class="no-underline cursor-pointer mt-4 mb-2">
-                        <p class="mt-2 flex items-center justify-center gap-2 text-[18px] hover:underline text-black">
+                        <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
                             Read More
                             <span>
-                                <i class="fa-solid fa-arrow-up rotate-30 text-lg"></i>
+                                <i class="fa-solid fa-arrow-up rotate-30 text-md"></i>
                             </span>
                         </p>
                     </a>
@@ -407,6 +444,667 @@
             </div>
         </div>
     </section>
+
+    <!-- Choose Us Section -->
+    <section class="relative">
+        <div
+            class="px-[7%] lg:px-[7%] xl:px-[7%] flex flex-col lg:flex-row z-1 w-full bg-[#fff] mt-24 lg:gap-10  justify-center mb-36">
+            <!-- First div (image and small circle) -->
+            <div class="relative w-full lg:w-1/2 sm:mb-16 lg:m-0 ">
+                <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/thumb-3-2.jpg" alt=""
+                    class="sm:h-[600px] min-h-[200px] object-contain lg:h-auto sm:w-full lg:w-[370px] xl:ml-[25%] lg:ml-[15%] z-1">
+                <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/thumb-3-1.jpg" alt=""
+                    class="absolute top-[230px] w-[280px] xl:w-[290px] lg:w-[310px] hidden lg:block z-1">
+            </div>
+
+            <!-- Second div (content and button) -->
+            <div class="relative w-full lg:w-1/2 mt-8  lg:mt-0 ">
+                <h2 class="text-4xl font-semibold text-black text-left">Produce your own clean save the environment</h2>
+                <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sapiente molestiae,
+                    voluptatibus perferendis placeat iste officia et doloremque pariatur provident debitis, aspernatur
+                    alias quo maiores nostrum porro corporis doloribus architecto.
+                    Accusantium vitae pariatur molestias doloribus aut at temporibus velit, officiis ducimus iste fugit
+                    id consequatur rem, eligendi quod vel accusamus iusto atque quis praesentium aliquam ad. Suscipit
+                    aspernatur in laudantium.
+                    Quod tempora quaerat molestias.</p>
+                <div class="w-full flex flex-col flex-wrap-nowrap gap-4">
+                    <!-- Row 1 -->
+                    <div class="flex w-full mt-8 justify-between gap-4 flex-wrap sm:flex-wrap-nowrap">
+                        <div class="flex items-center rounded-lg gap-5 group flex-1">
+                            <div
+                                class="min-w-16 min-h-16 bg-[var(--color-bgSecondary)] flex items-center justify-center group-hover:bg-[var(--color-secondary)] transition-colors duration-300 ease-in-out">
+                                <span class="text-4xl group-hover:text-white text-[var(--color-secondary)]"><i
+                                        class="fa-solid fa-bolt"></i></span>
+                            </div>
+                            <p class="text-lg font-semibold text-left">Expert Electrician</p>
+                        </div>
+                        <div class="flex items-center rounded-lg gap-5 group flex-1">
+                            <div
+                                class="min-w-16 min-h-16 bg-[var(--color-bgSecondary)] flex items-center justify-center group-hover:bg-[var(--color-secondary)] transition-colors duration-300 ease-in-out">
+                                <span class="text-4xl group-hover:text-white text-[var(--color-secondary)]"><i
+                                        class="fa-solid fa-shield"></i></span>
+                            </div>
+                            <p class="text-lg font-semibold text-left">Safety Assurance</p>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="flex w-full justify-between gap-4 flex-wrap sm:flex-wrap-nowrap">
+                        <div class="flex items-center rounded-lg gap-5 group flex-1">
+                            <div
+                                class="min-w-16 min-h-16 bg-[var(--color-bgSecondary)] flex items-center justify-center group-hover:bg-[var(--color-secondary)] transition-colors duration-300 ease-in-out">
+                                <span class="text-4xl group-hover:text-white text-[var(--color-secondary)]"><i
+                                        class="fa-solid fa-user"></i></span>
+                            </div>
+                            <p class="text-lg font-semibold">Customer Support</p>
+                        </div>
+                        <div class="flex items-center rounded-lg gap-5 group flex-1">
+                            <div
+                                class="min-w-16 min-h-16 bg-[var(--color-bgSecondary)] flex items-center justify-center group-hover:bg-[var(--color-secondary)] transition-colors duration-300 ease-in-out">
+                                <span class="text-4xl group-hover:text-white text-[var(--color-secondary)]"><i
+                                        class="fa-solid fa-phone"></i></span>
+                            </div>
+                            <p class="text-lg font-semibold">24/7 Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border w-full mt-5"></div>
+                <button
+                    class="w-48 h-[50px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-10 hover:text-white hover:bg-black transition duration-300 ease-in-out">
+                    KNOW MORE
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="relative h-screen bg-cover bg-center bg-[url('./assets/images/contact.jpg')] text-white mb-24">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+        <!-- Content Container -->
+        <div class="relative flex flex-col items-start justify-start  h-full text-left space-y-4 px-[7%]">
+            <h2 class="text-5xl font-[500] mt-28 w-[60%]">Your best option electrical contractors 24/7</h2>
+
+            <p class="max-w-md text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure velit
+                ratione voluptatem quas animi? Autem dignissimos consequuntur obcaecati quibusdam doloremque delectus
+                sapiente architecto, pariatur similique molestias nemo iusto atque.</p>
+
+            <div class="flex sm:space-x-4 flex-col sm:flex-row">
+                <button
+                    class="w-52 h-[60px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-black hover:bg-[#fff] transition duration-300 ease-in-out">
+                    DISCOVER MORE
+                </button>
+                <button
+                    class="w-52 h-[60px] bg-transparent border text-[#fff] font-[500] mt-5 hover:text-white hover:bg-[var(--color-secondary)] hover:border-none transition duration-300 ease-in-out">
+                    FIND US
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="flex flex-col lg:flex-row items-center lg:items-start p-6  gap-6 lg:gap-10 px-[7%] mb-24">
+            <!-- Left Section with Image -->
+            <div class="w-full lg:w-2/5">
+                <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/faq-bg.jpg" alt="FAQ Background"
+                    class="w-full h-[500px] object-cover shadow-lg" />
+            </div>
+
+            <!-- Right Section with FAQ Dropdown -->
+            <div class="w-full lg:w-3/5 space-y-4">
+                <h2 class="text-4xl font-[500]">Frequently asked <span
+                        class="text-[var(--color-secondary)]">questions</span></h2>
+                <div id="faq-container-1"
+                    class="faq-container shadow-md transform transition-transform duration-300 hover:bg-[var(--color-secondary)] group">
+                    <button onclick="toggleFaq(1)"
+                        class="px-6 flex items-center justify-start gap-5 w-full py-4 text-left focus:outline-none hover:text-white">
+                        <span id="span-1"
+                            class="faq-icon flex text-sm items-center justify-center w-6 h-6 bg-[var(--color-secondary)] text-white rounded-full transform transition-transform duration-300 group-hover:bg-white group-hover:text-black">
+                            <span id="icon-1"><i class="fa-solid fa-plus"></i></span>
+                        </span>
+                        <span class="text-[17px] font-[500] group-hover:text-white">What is the return policy?</span>
+                    </button>
+                    <div id="faq-1"
+                        class="px-6 faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out bg-white">
+                        <p class="p-2 text-[var(--color-textTertiary)]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae placeat totam
+                            assumenda? Tempore modi, veniam nemo placeat repellendus dolore quibusdam similique labore
+                            magni
+                            cumque nihil officia, vero repellat voluptate?
+                        </p>
+                    </div>
+                </div>
+                <div id="faq-container-2"
+                    class="faq-container shadow-md transform transition-transform duration-300 hover:bg-[var(--color-secondary)] group">
+                    <button onclick="toggleFaq(2)"
+                        class="px-6 flex items-center justify-start gap-5 w-full py-4 text-left focus:outline-none hover:text-white">
+                        <span id="span-2"
+                            class="faq-icon flex text-sm items-center justify-center w-6 h-6 bg-[var(--color-secondary)] text-white rounded-full transform transition-transform duration-300 group-hover:bg-white group-hover:text-black">
+                            <span id="icon-2"><i class="fa-solid fa-plus"></i></span>
+                        </span>
+                        <span class="text-[17px] font-[500] group-hover:text-white">How do I track my order?</span>
+                    </button>
+                    <div id="faq-2"
+                        class="px-6 faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out bg-white">
+                        <p class="p-2 text-[var(--color-textTertiary)]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae placeat totam
+                            assumenda?
+                            Tempore modi, veniam nemo placeat repellendus dolore quibusdam similique labore magni cumque
+                            nihil officia,
+                            vero repellat voluptate?
+                        </p>
+                    </div>
+                </div>
+
+                <div id="faq-container-3"
+                    class="faq-container shadow-md transform transition-transform duration-300 hover:bg-[var(--color-secondary)] group">
+                    <button onclick="toggleFaq(3)"
+                        class="px-6 flex items-center justify-start gap-5 w-full py-4 text-left focus:outline-none hover:text-white">
+                        <span id="span-3"
+                            class="faq-icon flex text-sm items-center justify-center w-6 h-6 bg-[var(--color-secondary)] text-white rounded-full transform transition-transform duration-300 group-hover:bg-white group-hover:text-black">
+                            <span id="icon-3"><i class="fa-solid fa-plus"></i></span>
+                        </span>
+                        <span class="text-[17px] font-[500] group-hover:text-white">How can I contact customer
+                            support?</span>
+                    </button>
+                    <div id="faq-3"
+                        class="px-6 faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out bg-white">
+                        <p class="p-2 text-[var(--color-textTertiary)]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae placeat totam
+                            assumenda?
+                            Tempore modi, veniam nemo placeat repellendus dolore quibusdam similique labore magni cumque
+                            nihil officia,
+                            vero repellat voluptate?
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="p-[7%] testimonial-carousel bg-[var(--color-bgSecondary)]">
+        <div class="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
+            <div
+                class="flex justify-center items-center gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8 max-w-sm sm:max-w-2xl lg:max-w-full mx-auto">
+                <div class="w-full lg:w-2/5">
+                    <h2 class="text-4xl font-bold text-gray-900 leading-[3.25rem] mb-8">23k+ Customers gave their <span
+                            class=" text-transparent bg-clip-text bg-[var(--color-secondary)]">Feedback</span>
+                    </h2>
+                    <!-- Slider controls -->
+                    <div class="flex items-center justify-center lg:justify-start gap-10">
+                        <button id="slider-button-left"
+                            class="swiper-button-prev group flex justify-center items-center bg-[#fff] w-12 h-12 transition-all duration-500 rounded-lg hover:bg-[var(--color-secondary)] hover:border-none"
+                            data-carousel-prev>
+                            <svg class="h-6 w-6 text-[var(--color-primary)] group-hover:text-white" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                        <button id="slider-button-right"
+                            class="swiper-button-next group flex justify-center items-center bg-[#fff] w-12 h-12 transition-all duration-500 rounded-lg hover:bg-[var(--color-secondary)] hover:border-none"
+                            data-carousel-next>
+                            <svg class="h-6 w-6 text-black group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-3/5">
+                    <!--Slider wrapper-->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="swiper-slide group shadow-lg bg-white max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-5">
+                                    <img class="rounded-full object-cover"
+                                        src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Jane D</h5>
+                                        <span class="text-sm leading-6 text-gray-500">CEO </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-5 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24  group-hover:text-gray-800">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae impedit
+                                    assumenda tenetur cum, maiores quaerat ut inventore eveniet dolorum repudiandae ipsa
+                                    vel rem. Vel nemo voluptates harum quis magnam!
+                                </p>
+
+                            </div>
+                            <div
+                                class="swiper-slide group bg-white shadow-lg max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 ">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-5">
+                                    <img class="rounded-full object-cover"
+                                        src="	https://pagedone.io/asset/uploads/1696229994.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Harsh P.
+                                        </h5>
+                                        <span class="text-sm leading-6 text-gray-500">Product Designer </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-5 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quisquam doloribus
+                                    sunt debitis voluptatibus aliquam dolorum fugiat delectus odit deleniti et
+                                    consequuntur blanditiis magni perspiciatis quos commodi, voluptatum quidem omnis.
+                                </p>
+
+                            </div>
+                            <div
+                                class="swiper-slide group bg-white shadow-lg max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 ">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-5">
+                                    <img class="rounded-full object-cover"
+                                        src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Jane D</h5>
+                                        <span class="text-sm leading-6 text-gray-500">CEO </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-5 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos id
+                                    neque veritatis consequuntur molestiae! Blanditiis dolorum reiciendis recusandae
+                                    adipisci voluptas nihil consectetur. Molestiae ipsam nobis fuga quia error a?
+                                </p>
+
+                            </div>
+                            <div
+                                class="swiper-slide group bg-white shadow-lg max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 ">
+                                <div class="flex items-center gap-5 mb-5 sm:mb-5">
+                                    <img class="rounded-full object-cover"
+                                        src="	https://pagedone.io/asset/uploads/1696229994.png" alt="avatar">
+                                    <div class="grid gap-1">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500  ">Harsh P.
+                                        </h5>
+                                        <span class="text-sm leading-6 text-gray-500">Product Designer </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center mb-5 sm:mb-5 gap-2 text-amber-500 transition-all duration-500  ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p
+                                    class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laudantium,
+                                    molestias quaerat reprehenderit animi repellendus? Nostrum voluptas ipsam velit ex
+                                    quaerat.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Know More -->
+    <section class="relative">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-6 md:gap-0">
+            <!-- Left Section with Image -->
+            <div class="lg:w-1/2 w-full flex flex-col md:flex-row justify-between items-center gap-10 md:mb-10 lg:mb-0 lg:py-10 bg-[var(--color-secondary)]">
+                <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/faq-bg.jpg" alt="FAQ Background"
+                    class="md:w-1/2 w-full h-[350px] object-cover" />
+                <div class="flex flex-col gap-4 items-center md:items-start  text-center mb-10 md:mb-0 md:text-left">
+                    <p class="text-white text-3xl font-[500] w-[93%] lg:w-[80%]">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <button
+                        class="w-52 h-[60px] bg-[black] text-[#fff] font-[500] mt-5 hover:text-black hover:bg-[#fff] transition duration-300 ease-in-out">
+                        DISCOVER MORE
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Right Section with Parallax Background -->
+            <div class="w-full lg:w-1/2 h-[300px] lg:h-[430px] relative overflow-hidden bg-fixed bg-cover flex flex-col md:flex-row"
+                style="background-image: url('https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/faq-bg.jpg');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-center text-white px-4">
+                    <p class="text-2xl font-semibold w-[93%] lg:w-[80%] text-md">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.Minima voluptate quam vel. Quo voluptate aperiam porro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="relative">
+        <div class="bg-[#fff] px-[7%] flex flex-col text-center z-1">
+            <h2 class="text-4xl font-semibold text-black mt-24">Latest news & articles</h2>
+            <h2 class="text-4xl font-semibold text-black">from the blog</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 mb-24">
+
+                <div class="relative flex flex-col items-center justify-center group overflow-hidden pb-1">
+                    <div class="relative h-[310px] w-full cursor-pointer overflow-hidden">
+                        <img src="./assets/images/hero3.png" alt=""
+                            class="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10">
+                        </div>
+                    </div>
+
+                    <!-- Arrow Icon with Slide-down Effect -->
+                    <div
+                        class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
+                        <a href="#"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                    </div>
+
+                    <div
+                        class=" w-[90%]  md:w-[85%%] xl:w-[85%] min-h-[140px] bg-[#fff] -mt-16 shadow-lg p-7 text-gray-800 z-20 relative">
+                        <div class="flex items-center justify-center gap-10 mb-2 text-[15px]">
+                            <p class="flex items-center gap-2 text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <span class="text-[var(--color-textTertiary)]">By Biddut</span>
+                            </p>
+                            <p class="flex items-center gap-2 text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-note-sticky"></i>
+                                <span class="text-[var(--color-textTertiary)]">Generator</span>
+                            </p>
+                        </div>
+                        <p class="font-semibold text-lg text-black mt-4">Voltage Illuminating Energy Perspectives</p>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col items-center justify-center group overflow-hidden pb-1">
+                    <div class="relative h-[310px] w-full cursor-pointer overflow-hidden">
+                        <img src="./assets/images/hero3.png" alt=""
+                            class="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10">
+                        </div>
+                    </div>
+
+                    <!-- Arrow Icon with Slide-down Effect -->
+                    <div
+                        class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
+                        <a href="#"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                    </div>
+
+                    <div
+                        class=" w-[90%]  md:w-[85%%] xl:w-[85%] min-h-[140px] bg-[#fff] -mt-16 shadow-lg p-7 text-gray-800 z-20 relative">
+                        <div class="flex items-center justify-center gap-10 mb-2 text-[15px]">
+                            <p class="flex items-center gap-2 text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <span class="text-[var(--color-textTertiary)]">By Biddut</span>
+                            </p>
+                            <p class="flex items-center gap-2 text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-note-sticky"></i>
+                                <span class="text-[var(--color-textTertiary)]">Generator</span>
+                            </p>
+                        </div>
+                        <p class="font-semibold text-lg text-black mt-4">Our electrical repair know what a hassle</p>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col items-center justify-center group overflow-hidden pb-1">
+                    <div class="relative h-[310px] w-full cursor-pointer overflow-hidden">
+                        <img src="./assets/images/hero3.png" alt=""
+                            class="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10">
+                        </div>
+                    </div>
+
+                    <!-- Arrow Icon with Slide-down Effect -->
+                    <div
+                        class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
+                        <a href="#"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                    </div>
+
+                    <div
+                        class=" w-[90%]  md:w-[85%%] xl:w-[85%] min-h-[140px] bg-[#fff] -mt-16 shadow-lg p-7 text-gray-800 z-20 relative">
+                        <div class="flex items-center justify-center gap-10 mb-2 text-[15px]">
+                            <p class="flex items-center gap-2 text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <span class="text-[var(--color-textTertiary)] ">By Biddut</span>
+                            </p>
+                            <p class="flex items-center gap-2 text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-note-sticky"></i>
+                                <span class="text-[var(--color-textTertiary)]">Generator</span>
+                            </p>
+                        </div>
+                        <p class="font-semibold text-lg text-black mt-4">Without electricity, most the things we do</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="bg-[#16171A] text-[#EEEEEE] py-10 px-[7%] ">
+            <div class="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+                <!-- First Column (Logo and Description) -->
+                <div class="space-y-4">
+                    <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt="Logo"
+                        class="w-42">
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates. Quisquam,
+                        voluptates.
+                        Quisquam, voluptates. Quisquam, voluptates.
+                    </p>
+
+                    <!-- Social Media Links -->
+                    <div class="flex gap-2 flex-col items-start">
+                        <div
+                            class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                            <span class="text-[var(--color-secondary)]"><i
+                                    class="fa-solid fa-location-dot"></i></span>San
+                            Fransisco Street. New York
+                        </div>
+                        <div
+                            class="text-[var(--color-textSecondary)] md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                            <span class="text-[var(--color-secondary)]"><i
+                                    class="fa-solid fa-envelope"></i></span>needhelp@company.com
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column (Services) -->
+                <div class="space-y-1">
+                    <p class="text-lg font-bold">Services</p>
+
+                    <!-- First Column -->
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Wiring
+                                and Rewiring Services
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff]">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
+                                Panel Upgrades
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Lighting
+                                and Repairs
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
+                                Safety Inspections
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Second Column -->
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Surge
+                                Protection
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Troubleshooting
+                                and Repairs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Third Column (Quick Links) -->
+                <div class="space-y-2">
+                    <p class="text-lg font-bold">Quick Links</p>
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Home
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff]">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>About
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Services
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Blog
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Contact
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="#" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- New Fourth Column -->
+                <div class="space-y-4 xl:ml-[20px]">
+                    <p class="text-lg font-bold">Gallery</p>
+                    <div class="flex items-center gap-4">
+                        <!-- Image 1 -->
+                        <div class="overflow-hidden h-20 w-20">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-2.jpg"
+                                alt="Gallery Image 1" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-3.jpg"
+                                alt="Gallery Image 2" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-4.jpg"
+                                alt="Gallery Image 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <!-- Image 4 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-1.jpg"
+                                alt="Gallery Image 4" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 5 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-6.jpg"
+                                alt="Gallery Image 5" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 6 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-5.jpg"
+                                alt="Gallery Image 6" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-black min-h-[80px] flex flex-col md:flex-row justify-between items-center px-[7%]">
+            <p class="text-center text-[var(--color-textSecondary)] py-4 md:py-0">© 2024 All Rights Reserved. Designed
+                by <a href="#" class="text-[#fff] hover:underline">ABC</a>
+            </p>
+            <div class="flex space-x-4 mb-5 md:mb-0">
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-facebook-f text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-instagram text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-twitter text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fa-regular fa-envelope text-white"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./script/script.js"></script>
 </body>
