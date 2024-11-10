@@ -26,6 +26,13 @@ closeIcon.addEventListener("click", function() {
     menuContainer.classList.add("translate-x-full");  
 });
 
+document.addEventListener("click", function(event) {
+    const isClickInside = menuContainer.contains(event.target) || menuIcon.contains(event.target);
+    if (!isClickInside) {
+        menuContainer.classList.add("translate-x-full");
+    }
+});
+
 
 document.getElementById("arrowToggle").addEventListener("click", function() {
     const options = document.getElementById("options");
