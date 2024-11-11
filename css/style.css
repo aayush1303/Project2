@@ -12,6 +12,7 @@ body {
     --color-bgPrimary: #F2EDEB;
     --color-bgSecondary: #f2f0f0;
     --color-bgTertiary: #F6F4F3;
+    --color-service:#F5F5F8;
 }
 
 .fixed {
