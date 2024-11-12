@@ -13,6 +13,20 @@ window.addEventListener("scroll", function() {
     }
 });
 
+document.getElementById('search').addEventListener('click', function() {
+    const searchContainer = document.getElementById('searchContainer');
+    
+    if (searchContainer.style.top === '0px') {
+        searchContainer.style.top = '-100%'; 
+    } else {
+        searchContainer.style.top = '0'; 
+    }
+});
+
+document.getElementById('closeSearch').addEventListener('click', function() {
+    const searchContainer = document.getElementById('searchContainer');
+    searchContainer.style.top = '-100%'; 
+});
 
 const menuIcon = document.getElementById("menuIcon");
 const menuContainer = document.getElementById("menuContainer");

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="topBar"
+        class="h-10 fixed w-full bg-[var(--color-primary)] flex items-center justify-center sm:justify-between px-[7%] lg:px-[7%] xl:px-[7%] z-[100]">
+        <div class="flex items-center justify-between gap-5">
+            <div
+                class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                <span class="text-[var(--color-secondary)]"><i class="fa-solid fa-location-dot"></i></span>76 San
+                Fransisco Street. New York
+            </div>
+            <div
+                class="text-[var(--color-textSecondary)] hidden md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                <span class="text-[var(--color-secondary)]"><i
+                        class="fa-solid fa-envelope"></i></span>needhelp@company.com
+            </div>
+        </div>
+        <div class="flex items-center hidden sm:flex text-white justify-between gap-4">
+            <i
+                class="fab fa-facebook-f text-[var(--color-textprimary)]  hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i
+                class="fab fa-instagram text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i
+                class="fab fa-twitter text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i
+                class="fa-brands fa-linkedin-in text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+        </div>
+    </div>
+    <header id="mainHeader" class="fixed top-10 left-0 w-full z-[100] transition-transform duration-300 ease-in-out">
+        <div
+            class="flex items-center justify-between px-[7%] h-20 md:h-23 w-full bg-transparent lg:px-[7%] xl:px-[7%] border-b border-[#2C2F39]">
+            <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+            <div class="flex items-center justify-between">
+                <ul class="lg:flex text-xl items-center justify-between gap-14 hidden">
+                    <li class="text-white text-md cursor-pointer underline-animation">
+                        <a href="../index.html" class="no-underline text-white">
+                            <span id="underline">Home</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="./about.html" class="no-underline text-white">
+                            <span id="underline">About</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer relative group py-6">
+                        <a href="#" class="no-underline text-white relative">
+                            <span id="underline">Services</span>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <ul
+                            class="absolute left-0 mt-[26px] bg-black overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[200px]">
+                            <li><a href="./services/ElectricalPanelUpgrades.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Electrical
+                                    Panel Upgrades</a>
+                            </li>
+                            <li><a href="./services/WiringRewiringService.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Wiring
+                                    and Rewiring Services</a>
+                            </li>
+                            <li><a href="./services/LightingRepairs.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Lighting
+                                    and Repairs</a>
+                            </li>
+                            <li><a href="./services/ElectricalSafetyInspections.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Electrical
+                                    Safety Inspections</a>
+                            </li>
+                            <li><a href="./services/SurgeProtection.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Surge
+                                    Protection</a>
+                            </li>
+                            <li><a href="./services/ElectricalPanelUpgrades.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Troubleshooting
+                                    and Repairs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="./gallery.html" class="no-underline text-white">
+                            <span id="underline">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="./blog.html" class="no-underline text-white">
+                            <span id="underline">Blog</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="./contact.html" class="no-underline text-white">
+                            <span id="underline">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-8">
+                <div id="search" class="items-center hidden md:flex text-white gap-7 text-xl cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div id="menuIcon"
+                    class="h-12 w-12 bg-[var(--color-secondary)] flex items-center justify-center text-white text-xl md:text-2xl lg:hidden cursor-pointer">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="searchContainer" class="fixed top-[-100%] left-0 w-full h-[45%] bg-[rgba(0,0,0,0.8)] text-white flex overflow-hidden transition-all duration-300 z-[1000]">
+        <div class="relative w-full px-[7%] flex flex-col mt-16 justify-start">
+            <div class="w-full flex-col flex gap-20">
+                <div class="flex justify-between items-center w-full">
+                    <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+                    <div id="closeSearch" class="text-2xl cursor-pointer"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="relative">
+                    <input type="text" placeholder="Type here to search" class="w-full py-4 text-2xl pl-3 pr-10 border-b-2 border-[#818181] placeholder:text-[#818181] bg-transparent focus:outline-none focus:border-[var(--color-secondary)]" />
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-[#fff] text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menuContainer"
+        class="lg:hidden w-[350px] sm:w-[400px] md:w-[450px] bg-black overflow-y-auto right-0 left-auto h-screen fixed z-[100] p-10 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class=" flex items-center justify-between ">
+            <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+            <div id="closeIcon"
+                class="h-12 w-12 bg-white flex items-center justify-center text-black text-xl md:text-2xl lg:hidden cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <p class="text-[var(--color-textSecondary)] mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis accusamus
+            dolores nisi esse mollitia? Pariatur est, dicta vitae placeat dolor maiores expedita aut quae, sint ipsa
+            harum aliquam repellat nesciunt.
+        </p>
+        <div class="mt-10">
+            <ul class="list-none flex flex-col gap-3">
+                <li>
+                    <a href="../index.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">About</a>
+                </li>
+                <div class="group">
+                    <div class="flex items-center justify-between">
+                        <li class="text-white text-md group-hover:text-[var(--color-secondary)] cursor-pointer">Services
+                        </li>
+                        <div id="arrowToggle"
+                            class="h-5 w-5 border border-white group-hover:border-[var(--color-secondary)] text-white group-hover:text-[var(--color-secondary)] flex items-center justify-center text-[12px] cursor-pointer mr-4">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div id="options" class="hidden text-white text-md ">
+                        <li><a href="./services/ElectricalPanelUpgrades.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical Panel Upgrades</a>
+                        </li>
+                        <li><a href="./services/WiringRewiringService.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Wiring
+                                and Rewiring Services</a>
+                        </li>
+                        <li><a href="./services/LightingRepairs.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Lighting
+                                and Repairs</a>
+                        </li>
+                        <li><a href="./services/ElectricalSafetyInspections.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical
+                                Safety Inspections</a>
+                        </li>
+                        <li><a href="./services/SurgeProtection.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Surge
+                                Protection</a>
+                        </li>
+                        <li><a href="./services/ElectricalPanelUpgrades.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Troubleshooting
+                                and Repairs</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="./blog.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Blog</a>
+                </li>
+                <li>
+                    <a href="./gallery.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Gallery</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <p class="text-white text-lg mt-10">Contact</p>
+        <div class="mt-5 text-white flex flex-col gap-3">
+
+            <!-- Address with Location Icon -->
+            <div class="flex items-start gap-4 ">
+                <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0">
+                    <i class="fa-solid fa-location-dot text-black"></i>
+                </a>
+                <p class="flex-1 hover:text-[var(--color-secondary)] cursor-pointer">San Fransisco, USA</p>
+            </div>
+
+            <!-- Phone with Phone Icon -->
+            <div class="flex items-center gap-4 ">
+                <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                    <i class="fa-solid fa-phone text-black"></i>
+                </div>
+                <p class="hover:text-[var(--color-secondary)] cursor-pointer">+000 123 456 789</p>
+            </div>
+
+            <!-- Email with Envelope Icon -->
+            <div class="flex items-center gap-4 ">
+                <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                    <i class="fa-solid fa-envelope text-black"></i>
+                </div>
+                <p class="hover:text-[var(--color-secondary)] cursor-pointer">info@example.com</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-[2%] mt-10 text-xl">
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-facebook-f text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-instagram text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-twitter text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fa-regular fa-envelope text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] bg-cover bg-center"
+    style="background-image: url('../assets/images/serviceHero.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+
+    <!-- Centered content -->
+    <div class="relative flex flex-col items-center justify-center h-full text-center text-white ">
+        <h1 class="text-4xl font-bold mb-4 mt-24">Contact</h1>
+        <p class="text-lg">Biddut/Contact</p>
+    </div>
+    </section>
+
+    <!-- Contact Info Section -->
+     <section class="relative px-[10%] mt-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-white">
+            <!-- Visit Our Place Card -->
+            <div class="flex flex-col items-center p-6 py-8 bg-[#fff] shadow-lg group">
+                <div class="flex items-start justify-center w-20 h-20 bg-[#F5F5F8] rounded-full mb-6">
+                    <i class="fa-solid fa-location-dot text-3xl text-[var(--color-secondary)] transform transition-transform duration-300 group-hover:translate-y-4"></i>
+                </div>
+                <div class="mt-auto mb-10"></div>
+                <h3 class="text-xl font-[500] mb-2">Visit our place</h3>
+                <p class="text-gray-500 text-center">
+                    88 New South Head Rd, Triple<br>San Fransisco
+                </p>
+            </div>
+        
+            <!-- Contact Us Card -->
+            <div class="flex flex-col items-center p-6 py-8 bg-[#fff] shadow-lg group">
+                <div class="flex items-start justify-center w-20 h-20 bg-[#F5F5F8] rounded-full mb-6">
+                    <i class="fa-regular fa-envelope text-3xl text-[var(--color-secondary)] transform transition-transform duration-300 group-hover:translate-y-4"></i>
+                </div>
+                <div class="mt-auto mb-10"></div>
+                <h3 class="text-xl font-[500] mb-2">Contact us</h3>
+                <p class="text-gray-500 text-center">
+                   biddut@website.com<br>+5613846816
+                </p>
+            </div>
+        
+            <!-- Office Time Card -->
+            <div class="flex flex-col items-center p-6 py-8 bg-[#fff] shadow-lg group">
+                <div class="flex items-start justify-center w-20 h-20 bg-[#F5F5F8] rounded-full mb-6">
+                    <i class="fa-regular fa-clock text-3xl text-[var(--color-secondary)] transform transition-transform duration-300 group-hover:translate-y-4"></i>
+                </div>
+                <div class="mt-auto mb-10"></div>
+                <h3 class="text-xl font-[500] mb-2">Office time</h3>
+                <p class="text-gray-500 text-center">
+                    Five days 8:00 am - 5:00 pm<br>Saturday is closed
+                </p>
+            </div>
+        </div>
+     </section>
+
+    <!-- Contact Form Section -->
+     <section class="relative px-[10%]">
+        <div class=" w-full  mt-24 border border-black-1 p-8">
+            <h2 class="text-2xl font-bold mb-6">Send a Message</h2>
+    
+            <form class="space-y-6">
+                <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+                    <div class="w-full md:w-1/2">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" class="mt-1 block w-full px-3 py-4 bg-[var(--color-service)] focus:outline-none"
+                            placeholder="Enter your name">
+                    </div>
+    
+                    <div class="w-full md:w-1/2">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+                        <input type="email" id="email"
+                            class="mt-1 block w-full px-3 py-4 bg-[var(--color-service)] focus:outline-none"
+                            placeholder="Enter your email">
+                    </div>
+                </div>
+    
+                <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+                    <div class="w-full md:w-1/2">
+                        <label for="address" class="block text-sm font-medium text-gray-700">Your Address</label>
+                        <input type="text" id="address"
+                            class="mt-1 block w-full px-3 py-4 bg-[var(--color-service)] focus:outline-none"
+                            placeholder="Enter your address">
+                    </div>
+    
+                    <div class="w-full md:w-1/2">
+                        <label for="issue" class="block text-sm font-medium text-gray-700">Your Issue</label>
+                        <input type="text" id="issue"
+                            class="mt-1 block w-full px-3 py-4 bg-[var(--color-service)] focus:outline-none"
+                            placeholder="Enter your issue">
+                    </div>
+                </div>
+    
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" rows="4"
+                        class="mt-1 h-[22vh] block w-full px-4 py-3 bg-[var(--color-service)] focus:outline-none"
+                        placeholder="Write your message"></textarea>
+                </div>
+    
+                <div>
+                    <button type="submit"
+                    class="w-56 h-[50px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-[#fff] hover:bg-black transition duration-300 ease-in-out">
+                    SEND MESSAGE
+                    </button>
+                </div>
+            </form>
+    
+        </div>
+     </section>
+
+    <!-- Map Section -->
+    <div class="w-full max-w-6.5xl mx-auto mt-28 ">
+
+        <div class="overflow-hidden rounded-lg shadow-lg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197214.4195069445!2d-83.13986550453077!3d40.00966954536853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883889c1b990de71%3A0xe43266f8cfb1b533!2sColumbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730267760527!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>        
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="bg-[#16171A] text-[#EEEEEE] py-10 px-[7%]">
+            <div class="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+                <!-- First Column (Logo and Description) -->
+                <div class="space-y-4">
+                    <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt="Logo"
+                        class="w-42">
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates. Quisquam,
+                        voluptates.
+                        Quisquam, voluptates. Quisquam, voluptates.
+                    </p>
+
+                    <!-- Social Media Links -->
+                    <div class="flex gap-2 flex-col items-start">
+                        <div
+                            class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                            <span class="text-[var(--color-secondary)]"><i
+                                    class="fa-solid fa-location-dot"></i></span>San
+                            Fransisco Street. New York
+                        </div>
+                        <div
+                            class="text-[var(--color-textSecondary)] md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                            <span class="text-[var(--color-secondary)]"><i
+                                    class="fa-solid fa-envelope pr-2 md:pr-0"></i></span>needhelp@company.com
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column (Services) -->
+                <div class="space-y-1">
+                    <p class="text-lg font-bold">Services</p>
+
+                    <!-- First Column -->
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="./services/ElectricalPanelUpgrades.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
+                                Panel Upgrades
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./services/WiringRewiringService.html" class="cursor-pointer hover:text-[#fff]">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Wiring
+                                and Rewiring Services
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./services/LightingRepairs.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Lighting
+                                and Repairs
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./services/ElectricalSafetyInspections.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
+                                Safety Inspections
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Second Column -->
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="./services/SurgeProtection.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Surge
+                                Protection
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./services/TroubleshootingRepair.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Troubleshooting
+                                and Repairs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Third Column (Quick Links) -->
+                <div class="space-y-2">
+                    <p class="text-lg font-bold">Quick Links</p>
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="../index.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Home
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./about.html" class="cursor-pointer hover:text-[#fff]">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>About
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./blog.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Blog
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="./contact.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Contact
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./gallery.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- New Fourth Column -->
+                <div class="space-y-4 xl:ml-[20px]">
+                    <p class="text-lg font-bold">Gallery</p>
+                    <div class="flex items-center gap-4">
+                        <!-- Image 1 -->
+                        <div class="overflow-hidden h-20 w-20">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-2.jpg"
+                                alt="Gallery Image 1" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-3.jpg"
+                                alt="Gallery Image 2" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-4.jpg"
+                                alt="Gallery Image 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <!-- Image 4 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-1.jpg"
+                                alt="Gallery Image 4" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 5 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-6.jpg"
+                                alt="Gallery Image 5" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 6 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-5.jpg"
+                                alt="Gallery Image 6" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-black min-h-[80px] flex flex-col md:flex-row justify-between items-center px-[7%]">
+            <p class="text-center text-[var(--color-textSecondary)] py-4 md:py-0">© 2024 All Rights Reserved. Designed
+                by <a href="#" class="text-[#fff] hover:underline">ABC</a>
+            </p>
+            <div class="flex space-x-4 mb-5 md:mb-0">
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-facebook-f text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-instagram text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-twitter text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fa-regular fa-envelope text-white"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+
+
+</html>

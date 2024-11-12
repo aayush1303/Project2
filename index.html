@@ -111,7 +111,7 @@
                 </ul>
             </div>
             <div class="flex items-center gap-8">
-                <div class="items-center hidden md:flex text-white gap-7 text-xl">
+                <div id="search" class="items-center hidden md:flex text-white gap-7 text-xl cursor-pointer">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div id="menuIcon"
@@ -121,6 +121,22 @@
             </div>
         </div>
     </header>
+    <div id="searchContainer" class="fixed top-[-100%] left-0 w-full h-[45%] bg-[rgba(0,0,0,0.8)] text-white flex overflow-hidden transition-all duration-300 z-[1000]">
+        <div class="relative w-full px-[7%] flex flex-col mt-16 justify-start">
+            <div class="w-full flex-col flex gap-20">
+                <div class="flex justify-between items-center w-full">
+                    <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+                    <div id="closeSearch" class="text-2xl cursor-pointer"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="relative">
+                    <input type="text" placeholder="Type here to search" class="w-full py-4 text-2xl pl-3 pr-10 border-b-2 border-[#818181] placeholder:text-[#818181] bg-transparent focus:outline-none focus:border-[var(--color-secondary)]" />
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-[#fff] text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="menuContainer"
         class="lg:hidden w-[350px] sm:w-[400px] md:w-[450px] bg-black overflow-y-auto right-0 left-auto h-screen fixed z-[100] p-10 transform translate-x-full transition-transform duration-300 ease-in-out">
@@ -816,7 +832,7 @@
 
                 <div class="relative flex flex-col items-center justify-center group overflow-hidden pb-1">
                     <div class="relative h-[310px] w-full cursor-pointer overflow-hidden">
-                        <img src="./assets/images/hero3.png" alt=""
+                        <img src="./assets/images/blog.jpg" alt=""
                             class="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105">
                         <div
                             class="absolute inset-0 bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10">
@@ -847,7 +863,7 @@
 
                 <div class="relative flex flex-col items-center justify-center group overflow-hidden pb-1">
                     <div class="relative h-[310px] w-full cursor-pointer overflow-hidden">
-                        <img src="./assets/images/hero3.png" alt=""
+                        <img src="./assets/images/blog2.jpg" alt=""
                             class="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105">
                         <div
                             class="absolute inset-0 bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10">
@@ -857,7 +873,7 @@
                     <!-- Arrow Icon with Slide-down Effect -->
                     <div
                         class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
-                        <a href="#"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                        <a href="./pages/blogs/blog2.html"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
                     </div>
 
                     <div
@@ -878,7 +894,7 @@
 
                 <div class="relative flex flex-col items-center justify-center group overflow-hidden pb-1">
                     <div class="relative h-[310px] w-full cursor-pointer overflow-hidden">
-                        <img src="./assets/images/hero3.png" alt=""
+                        <img src="./assets/images/blogcontent.jpg" alt=""
                             class="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105">
                         <div
                             class="absolute inset-0 bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10">
@@ -888,7 +904,7 @@
                     <!-- Arrow Icon with Slide-down Effect -->
                     <div
                         class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
-                        <a href="#"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                        <a href="./pages/blogs/blog3.html"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
                     </div>
 
                     <div
