@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="topBar"
+        class="h-10 fixed w-full bg-[var(--color-primary)] flex items-center justify-center sm:justify-between px-[7%] lg:px-[7%] xl:px-[7%] z-[100]">
+        <div class="flex items-center justify-between gap-5">
+            <div
+                class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                <span class="text-[var(--color-secondary)]"><i class="fa-solid fa-location-dot"></i></span>76 San
+                Fransisco Street. New York
+            </div>
+            <div
+                class="text-[var(--color-textSecondary)] hidden md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                <span class="text-[var(--color-secondary)]"><i
+                        class="fa-solid fa-envelope"></i></span>needhelp@company.com
+            </div>
+        </div>
+        <div class="flex items-center hidden sm:flex text-white justify-between gap-4">
+            <i
+                class="fab fa-facebook-f text-[var(--color-textprimary)]  hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i
+                class="fab fa-instagram text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i
+                class="fab fa-twitter text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+            <i
+                class="fa-brands fa-linkedin-in text-[var(--color-textprimary)] hover:text-[var(--color-secondary)] cursor-pointer transition duration-300 ease-in-out"></i>
+        </div>
+    </div>
+    <header id="mainHeader" class="fixed top-10 left-0 w-full z-[100] transition-transform duration-300 ease-in-out">
+        <div
+            class="flex items-center justify-between px-[7%] h-20 md:h-23 w-full bg-transparent lg:px-[7%] xl:px-[7%] border-b border-[#2C2F39]">
+            <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+            <div class="flex items-center justify-between">
+                <ul class="lg:flex text-xl items-center justify-between gap-14 hidden">
+                    <li class="text-white text-md cursor-pointer underline-animation">
+                        <a href="../../index.html" class="no-underline text-white">
+                            <span id="underline">Home</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="../about.html" class="no-underline text-white">
+                            <span id="underline">About</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer relative group py-6">
+                        <a href="#" class="no-underline text-white relative">
+                            <span id="underline">Services</span>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <ul
+                            class="absolute left-0 mt-[26px] bg-black overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[200px]">
+                            <li><a href="../services/ElectricalPanelUpgrades.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Electrical
+                                    Panel Upgrades</a>
+                            </li>
+                            <li><a href="../services/WiringRewiringService.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Wiring
+                                    and Rewiring Services</a>
+                            </li>
+                            <li><a href="../services/LightingRepairs.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Lighting
+                                    and Repairs</a>
+                            </li>
+                            <li><a href="../services/ElectricalSafetyInspections.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Electrical
+                                    Safety Inspections</a>
+                            </li>
+                            <li><a href="../services/SurgeProtection.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Surge
+                                    Protection</a>
+                            </li>
+                            <li><a href="../services/TroubleshootingRepair.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Troubleshooting
+                                    and Repairs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="../gallery.html" class="no-underline text-white">
+                            <span id="underline">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="../blog.html" class="no-underline text-white">
+                            <span id="underline">Blog</span>
+                        </a>
+                    </li>
+                    <li class="text-white text-md cursor-pointer">
+                        <a href="../contact.html" class="no-underline text-white">
+                            <span id="underline">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-8">
+                <div class="items-center hidden md:flex text-white gap-7 text-xl">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div id="menuIcon"
+                    class="h-12 w-12 bg-[var(--color-secondary)] flex items-center justify-center text-white text-xl md:text-2xl lg:hidden cursor-pointer">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="menuContainer"
+        class="lg:hidden w-[350px] sm:w-[400px] md:w-[450px] bg-black overflow-y-auto right-0 left-auto h-screen fixed z-[100] p-10 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class=" flex items-center justify-between ">
+            <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+            <div id="closeIcon"
+                class="h-12 w-12 bg-white flex items-center justify-center text-black text-xl md:text-2xl lg:hidden cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <p class="text-[var(--color-textSecondary)] mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis accusamus
+            dolores nisi esse mollitia? Pariatur est, dicta vitae placeat dolor maiores expedita aut quae, sint ipsa
+            harum aliquam repellat nesciunt.
+        </p>
+        <div class="mt-10">
+            <ul class="list-none flex flex-col gap-3">
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">
+                    <a href="../about.html">About</a>
+                </li>
+                <div class="group">
+                    <div class="flex items-center justify-between">
+                        <li class="text-white text-md group-hover:text-[var(--color-secondary)] cursor-pointer">Services
+                        </li>
+                        <div id="arrowToggle"
+                            class="h-5 w-5 border border-white group-hover:border-[var(--color-secondary)] text-white group-hover:text-[var(--color-secondary)] flex items-center justify-center text-[12px] cursor-pointer mr-4">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div id="options" class="hidden text-white text-md ">
+                        <li><a href="../services/ElectricalPanelUpgrades.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical
+                                Panel Upgrades</a>
+                        </li>
+                        <li><a href="../services/WiringRewiringService.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Wiring
+                                and Rewiring Services</a>
+                        </li>
+                        <li><a href="../services/TroubleshootingRepair.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Lighting
+                                and Repairs</a>
+                        </li>
+                        <li><a href="../services/ElectricalSafetyInspections.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical
+                                Safety Inspections</a>
+                        </li>
+                        <li><a href="../services/SurgeProtection.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Surge
+                                Protection</a>
+                        </li>
+                        <li><a href="../services/LightingRepairs.html"
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Troubleshooting
+                                and Repairs</a>
+                        </li>
+                    </div>
+                </div>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">
+                    <a href="../gallery.html">Gallery</a>
+                </li>
+                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">
+                    <a href="../blog.html">Blog</a>
+                </li>                <li class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">
+                    <a href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <p class="text-white text-lg mt-10">Contact</p>
+        <div class="mt-5 text-white flex flex-col gap-3">
+
+            <!-- Address with Location Icon -->
+            <div class="flex items-start gap-4 ">
+                <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0">
+                    <i class="fa-solid fa-location-dot text-black"></i>
+                </a>
+                <p class="flex-1 hover:text-[var(--color-secondary)] cursor-pointer">San Fransisco, USA</p>
+            </div>
+
+            <!-- Phone with Phone Icon -->
+            <div class="flex items-center gap-4 ">
+                <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                    <i class="fa-solid fa-phone text-black"></i>
+                </div>
+                <p class="hover:text-[var(--color-secondary)] cursor-pointer">+000 123 456 789</p>
+            </div>
+
+            <!-- Email with Envelope Icon -->
+            <div class="flex items-center gap-4 ">
+                <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                    <i class="fa-solid fa-envelope text-black"></i>
+                </div>
+                <p class="hover:text-[var(--color-secondary)] cursor-pointer">info@example.com</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-[2%] mt-10 text-xl">
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-facebook-f text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-instagram text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fab fa-twitter text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12 rounded-full bg-black  transition duration-200">
+                <i class="fa-regular fa-envelope text-white hover:text-[var(--color-secondary)]"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] bg-cover bg-center"
+        style="background-image: url('../../assets/images/serviceHero.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+
+        <!-- Centered content -->
+        <div class="relative flex flex-col items-center justify-center h-full text-center text-white ">
+            <h1 class="text-4xl font-bold mb-4 mt-24">Voltage Illuminating Energy Perspectives</h1>
+            <p class="text-lg">Biddut/Blogs/Voltage Illuminating Energy Perspectives</p>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="relative">
+        <div class="flex px-[7%] mt-32 gap-10 flex-col lg:flex-row">
+            <div class="lg:w-2/3 w-full lg:px-0">
+                <div class="mt-5 w-full h-auto overflow-hidden object-contain">
+                    <img src="../../assets/images/blog.jpg" alt="">
+                </div> 
+                <div class="flex mt-4 w-full gap-5 flex-wrap justify-start items-center sm:flex-wrap-nowrap">
+                    <div class="flex items-center rounded-lg gap-2">
+                        <div
+                            class="flex items-center justify-center">
+                            <span class=" text-sm sm:text-lg text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-user"></i>
+                            </span>
+                        </div>
+                        <p class="text-sm text-left w-full text-[#727272]">biddut</p>
+                    </div>
+                    <div class="flex items-center rounded-lg gap-2">
+                        <div
+                            class="flex items-center justify-center">
+                            <span class=" text-sm sm:text-lg text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-calendar"></i>
+                            </span>
+                        </div>
+                        <p class="text-sm text-left w-full text-[#727272]">October 14, 2024</p>
+                    </div>
+                    <div class="flex items-center rounded-lg gap-2">
+                        <div
+                            class="flex items-center justify-center">
+                            <span class=" text-sm sm:text-lg text-[var(--color-secondary)]">
+                                <i class="fa-regular fa-comments"></i>
+                            </span>
+                        </div>
+                        <p class="text-sm text-left w-full text-[#727272]">No comments</p>
+                    </div>
+                </div>
+                <p class="text-[#727272] mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eveniet dolorem, iste delectus pariatur officiis veniam fugiat cupiditate quis deleniti, porro eos dolor et, iure eaque. Architecto ipsam magni asperiores.
+                Consectetur, similique! Autem sint fugiat iure illum, suscipit possimus corporis ratione nesciunt dignissimos facere, maxime ullam assumenda quae rem dolorum sit neque, illo odit iste tenetur id! Dolorem, nobis aut.
+                Aliquam facilis error veritatis assumenda explicabo culpa quos placeat voluptatum est odit nemo possimus at, accusantium nostrum numquam labore sunt unde cumque fuga vitae optio molestiae alias tenetur consectetur? Aperiam.</p>
+
+                <p class="text-[#727272] mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat maiores est consequuntur fuga, voluptatem expedita animi, placeat debitis tenetur totam sed ducimus. Aliquid libero fugit repudiandae nostrum eos ratione!
+                Facilis consequuntur illum incidunt obcaecati perspiciatis labore maiores, laborum voluptatem, accusantium eligendi hic laboriosam rem iusto veniam! Tenetur, autem doloribus repellendus similique provident ex corrupti. Possimus quaerat facilis laudantium minima?
+                Cumque quidem, possimus temporibus doloremque vero aut est aliquid vitae voluptates dolorum excepturi. Amet beatae ratione quisquam exercitationem culpa dolorum quasi eveniet quam. Eum, id? Distinctio labore nobis quaerat quibusdam!</p>
+
+                <div class="mt-5 w-full h-auto overflow-hidden object-contain">
+                    <img src="../../assets/images/contact.jpg" alt="">
+                </div>
+                <p class="text-3xl font-semibold mt-5">Biddut is the only theme you will ever need</p>
+                <p class="text-[#727272] mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, praesentium iste culpa debitis voluptas labore eveniet officia quibusdam doloribus ea, harum, beatae soluta natus earum fugit suscipit veritatis sit et!
+                Sunt vero odio ex. Aliquam facilis atque quia? Quia, odio temporibus quod veniam illo hic excepturi qui corrupti soluta perspiciatis magni accusamus quisquam maxime nesciunt provident atque consequuntur esse similique.</p>
+                <div class="w-full bg-[#727272] border mt-10"></div>
+
+                <div class=" w-full mt-16 ">
+                    <h2 class="text-xl font-[500] mb-5">Leave a reply</h2>
+                    <p class="text-[#727272] mb-4">Your email address will not be published. Required fields are marked *</p>
+                    <form class="space-y-6">
+                        <div>
+                            <textarea id="message" rows="4"
+                                class="mt-1 h-[22vh] block w-full px-4 py-3 bg-[#F5F5F8] focus:outline-none"
+                                placeholder="Write your message"></textarea>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+                            <div class="w-full md:w-1/3">
+                                <input type="text" id="name" class="mt-1 block w-full px-3 py-4 bg-[#F5F5F8] focus:outline-none"
+                                    placeholder="Name">
+                            </div>
+        
+                            <div class="w-full md:w-1/3">
+                                <input type="email" id="email"
+                                    class="mt-1 block w-full px-3 py-4 bg-[#F5F5F8] focus:outline-none"
+                                    placeholder="Email">
+                            </div>
+
+                            <div class="w-full md:w-1/3">
+                                <input type="text" id="address"
+                                    class="mt-1 block w-full px-3 py-4 bg-[#F5F5F8] focus:outline-none"
+                                    placeholder="Website">
+                            </div>
+                            
+                        </div>        
+                        <div>
+                            <button type="submit"
+                            class="w-56 h-[50px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-[#fff] hover:bg-black transition duration-300 ease-in-out">
+                            SUBMIT COMMENT
+                            </button>
+                        </div>
+                    </form>
+        
+                </div>
+            </div>
+            <div class="lg:w-1/3 flex flex-col w-full lg:px-0">
+                <div class="w-full h-auto mt-5 bg-[var(--color-service)] py-8 flex flex-col items-center justify-center">
+                    <div class="w-3/4 flex items-center  overflow-hidden">
+                      <input 
+                        type="text" 
+                        placeholder="Search..." 
+                        class="w-full px-4 py-4 focus:outline-none"
+                      />
+                      <button 
+                        class="px-5 py-4 bg-[var(--color-secondary)] text-white font-semibold hover:bg-black transition-colors duration-200">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                </div>
+                <div class="w-full h-auto mt-8 bg-[var(--color-service)] p-8 flex flex-col  justify-start gap-5">
+                    <p class="font-[500] text-xl">Recent Posts</p>
+                    <div class="flex w-full justify-between gap-4 flex-wrap sm:flex-wrap-nowrap">
+                        <div class="flex items-center rounded-lg gap-[1.25rem] group w-full">
+                            <div class="overflow-hidden h-[5.2rem] w-[5.2rem] w-1/3">
+                              <img src="../../assets/images/blog.jpg"
+                                   alt="Gallery Image 1" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex flex-col items-start gap-[0.25rem] w-2/3">
+                              <p class="text-[#727272] text-[0.875rem] flex items-center gap-[0.5rem] justify-center">
+                                <span class="text-[1.15rem] text-[var(--color-secondary)]">
+                                  <i class="fa-regular fa-clock"></i>
+                                </span>
+                                Oct 14, 2024
+                              </p>
+                              <p class="text-[1rem] text-black text-left w-full leading-[1.25rem] ">Lorem ipsum dolor sit ameti laudantium.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center rounded-lg gap-[1.25rem] group w-full">
+                            <div class="overflow-hidden h-[5.2rem] w-[5.2rem] w-1/3">
+                              <img src="../../assets/images/blog.jpg"
+                                   alt="Gallery Image 1" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex flex-col items-start gap-[0.25rem] w-2/3">
+                              <p class="text-[#727272] text-[0.875rem] flex items-center gap-[0.5rem] justify-center">
+                                <span class="text-[1.15rem] text-[var(--color-secondary)]">
+                                  <i class="fa-regular fa-clock"></i>
+                                </span>
+                                Oct 14, 2024
+                              </p>
+                              <p class="text-[1rem] text-black text-left w-full leading-[1.25rem] ">Lorem ipsum dolor sit ameti laudantium.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center rounded-lg gap-[1.25rem] group w-full">
+                            <div class="overflow-hidden h-[5.2rem] w-[5.2rem] w-1/3">
+                              <img src="../../assets/images/blog.jpg"
+                                   alt="Gallery Image 1" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex flex-col items-start gap-[0.25rem] w-2/3">
+                              <p class="text-[#727272] text-[0.875rem] flex items-center gap-[0.5rem] justify-center">
+                                <span class="text-[1.15rem] text-[var(--color-secondary)]">
+                                  <i class="fa-regular fa-clock"></i>
+                                </span>
+                                Oct 14, 2024
+                              </p>
+                              <p class="text-[1rem] text-black text-left w-full leading-[1.25rem] ">Lorem ipsum dolor sit ameti laudantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="bg-[#16171A] text-[#EEEEEE] py-10 px-[7%] mt-28">
+            <div class="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+                <!-- First Column (Logo and Description) -->
+                <div class="space-y-4">
+                    <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt="Logo"
+                        class="w-42">
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates. Quisquam,
+                        voluptates.
+                        Quisquam, voluptates. Quisquam, voluptates.
+                    </p>
+
+                    <!-- Social Media Links -->
+                    <div class="flex gap-2 flex-col items-start">
+                        <div
+                            class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                            <span class="text-[var(--color-secondary)]"><i
+                                    class="fa-solid fa-location-dot"></i></span>San
+                            Fransisco Street. New York
+                        </div>
+                        <div
+                            class="text-[var(--color-textSecondary)] md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                            <span class="text-[var(--color-secondary)]"><i
+                                    class="fa-solid fa-envelope pr-2 md:pr-0"></i></span>needhelp@company.com
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column (Services) -->
+                <div class="space-y-1">
+                    <p class="text-lg font-bold">Services</p>
+
+                    <!-- First Column -->
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="./ElectricalPanelUpgrades.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
+                                Panel Upgrades
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./WiringRewiringService.html" class="cursor-pointer hover:text-[#fff]">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Wiring
+                                and Rewiring Services
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./LightingRepairs.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Lighting
+                                and Repairs
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./ElectricalSafetyInspections.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
+                                Safety Inspections
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Second Column -->
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="./SurgeProtection.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Surge
+                                Protection
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="./TroubleshootingRepair.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Troubleshooting
+                                and Repairs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Third Column (Quick Links) -->
+                <div class="space-y-2">
+                    <p class="text-lg font-bold">Quick Links</p>
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="../../index.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Home
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="../about.html" class="cursor-pointer hover:text-[#fff]">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>About
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="../blog.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Blog
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="space-y-2 text-[var(--color-textTertiary)]">
+                        <li class="group">
+                            <a href="../contact.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Contact
+                            </a>
+                        </li>
+                        <li class="group">
+                            <a href="../gallery.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                                <i
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- New Fourth Column -->
+                <div class="space-y-4 xl:ml-[20px]">
+                    <p class="text-lg font-bold">Gallery</p>
+                    <div class="flex items-center gap-4">
+                        <!-- Image 1 -->
+                        <div class="overflow-hidden h-20 w-20">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-2.jpg"
+                                alt="Gallery Image 1" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-3.jpg"
+                                alt="Gallery Image 2" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-4.jpg"
+                                alt="Gallery Image 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <!-- Image 4 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-1.jpg"
+                                alt="Gallery Image 4" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 5 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-6.jpg"
+                                alt="Gallery Image 5" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Image 6 -->
+                        <div class="overflow-hidden h-20 w-20 ">
+                            <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/footer-1-5.jpg"
+                                alt="Gallery Image 6" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bg-black min-h-[80px] flex flex-col md:flex-row justify-between items-center px-[7%]">
+            <p class="text-center text-[var(--color-textSecondary)] py-4 md:py-0">© 2024 All Rights Reserved. Designed
+                by <a href="#" class="text-[#fff] hover:underline">ABC</a>
+            </p>
+            <div class="flex space-x-4 mb-5 md:mb-0">
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-facebook-f text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-instagram text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fab fa-twitter text-white"></i>
+                </a>
+                <a href="#"
+                    class="flex items-center justify-center w-12 h-12  bg-[#1D1E22] hover:bg-[var(--color-secondary)] transition duration-200">
+                    <i class="fa-regular fa-envelope text-white"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script/script.js"></script>
+</body>
+
+
+</html>
