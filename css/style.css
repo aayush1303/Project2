@@ -222,3 +222,45 @@ li:hover #underline::after {
 .underline-link:hover p {
     text-decoration: underline; 
 }
+
+.project-carousel .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.project-carousel .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 0 6px;
+}
+
+.project-carousel .swiper-pagination {
+    bottom: 2px;
+}
+
+.project-carousel .swiper-wrapper {
+    height: max-content;
+    width: max-content;
+    padding-bottom: 64px;
+}
+
+
+
+.service-carousel .swiper-button-prev:after,
+.service-carousel .swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+
+.service-carousel .swiper-button-next:after,
+.service-carousel .swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.service-carousel .swiper-button-next svg,
+.service-carousel .swiper-button-prev svg {
+    width: 24px;
+    height: 24px;
+}
+
+.service-carousel .swiper-button-next,
+.service-carousel .swiper-button-prev {
+    position: relative;
+}
+

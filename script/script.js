@@ -157,3 +157,57 @@ function toggleFaq(id) {
         iconSpan.classList.add('bg-white'); // Sets background to white for active span
     }
 }
+
+var projectCarousel = new Swiper(".project-carousel .mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 32,
+    loop: true,
+    centeredSlides: true,
+    pagination: false,
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        },
+    },
+});
+
+var serviceCarousel = new Swiper(".service-carousel .mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 28,
+    centeredSlides: true,
+    loop: true,
+    pagination:false,
+    navigation: {
+        nextEl: ".service-carousel .swiper-button-next",
+        prevEl: ".service-carousel .swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: false,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 28,
+            centeredSlides: true,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        },
+    },
+});
