@@ -24,7 +24,8 @@
         <div class="flex items-center justify-between gap-5">
             <div
                 class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
-                <span class="text-[var(--color-secondary)]"><i class="fa-solid fa-location-dot"></i></span>Downtown, Columbus, Ohio
+                <span class="text-[var(--color-secondary)]"><i class="fa-solid fa-location-dot"></i></span>Downtown,
+                Columbus, Ohio
             </div>
             <div
                 class="text-[var(--color-textSecondary)] hidden md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
@@ -92,10 +93,25 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="text-white text-[18px] cursor-pointer">
+                    <li class="text-white text-[18px] cursor-pointer group relative py-6">
                         <a href="./pages/serviceArea.html" class="no-underline text-white">
                             <span id="underline">Service Areas</span>
                         </a>
+                        <ul
+                            class="absolute left-0 mt-[26px] bg-black overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[200px]">
+                            <li><a href="./pages/serviceareas/area1.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Downtown,
+                                    Columbus, Ohio</a>
+                            </li>
+                            <li><a href="./pages/serviceareas/area2.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Clintonville,
+                                    Columbus, Ohio</a>
+                            </li>
+                            <li><a href="./pages/serviceareas/area3.html"
+                                    class="block px-4 py-2 text-white hover:bg-[var(--color-textTertiary)] text-[17px]">Dublin,
+                                    Columbus, Ohio</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="text-white text-[18px] cursor-pointer">
                         <a href="./pages/gallery.html" class="no-underline text-white">
@@ -125,17 +141,21 @@
             </div>
         </div>
     </header>
-    <div id="searchContainer" class="fixed top-[-100%] left-0 w-full h-[45%] bg-[rgba(0,0,0,0.8)] text-white flex overflow-hidden transition-all duration-300 z-[1000]">
+    <div id="searchContainer"
+        class="fixed top-[-100%] left-0 w-full h-[45%] bg-[rgba(0,0,0,0.8)] text-white flex overflow-hidden transition-all duration-300 z-[1000]">
         <div class="relative w-full px-[7%] flex flex-col mt-16 justify-start">
             <div class="w-full flex-col flex gap-20">
                 <div class="flex justify-between items-center w-full">
-                    <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt=""></div>
+                    <div><img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/10/white-logo.png" alt="">
+                    </div>
                     <div id="closeSearch" class="text-2xl cursor-pointer"><i class="fa-solid fa-xmark"></i></div>
                 </div>
                 <div class="relative">
-                    <input type="text" placeholder="Type here to search" class="w-full py-4 text-2xl pl-3 pr-10 border-b-2 border-[#818181] placeholder:text-[#818181] bg-transparent focus:outline-none focus:border-[var(--color-secondary)]" />
+                    <input type="text" placeholder="Type here to search"
+                        class="w-full py-4 text-2xl pl-3 pr-10 border-b-2 border-[#818181] placeholder:text-[#818181] bg-transparent focus:outline-none focus:border-[var(--color-secondary)]" />
                     <div class="cursor-pointer">
-                        <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-[#fff] text-xl"></i>
+                        <i
+                            class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-[#fff] text-xl"></i>
                     </div>
                 </div>
             </div>
@@ -159,10 +179,12 @@
         <div class="mt-10">
             <ul class="list-none flex flex-col gap-3">
                 <li>
-                    <a href="./index.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Home</a>
+                    <a href="./index.html"
+                        class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Home</a>
                 </li>
                 <li>
-                    <a href="./pages/about.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">About</a>
+                    <a href="./pages/about.html"
+                        class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">About</a>
                 </li>
                 <div class="group">
                     <div class="flex items-center justify-between">
@@ -175,7 +197,8 @@
                     </div>
                     <div id="options" class="hidden text-white text-md ">
                         <li><a href="./pages/services/ElectricalPanelUpgrades.html"
-                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical Panel Upgrades</a>
+                                class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Electrical
+                                Panel Upgrades</a>
                         </li>
                         <li><a href="./pages/services/WiringRewiringService.html"
                                 class="block px-4 py-2 text-white hover:text-[var(--color-secondary)] text-[17px]">Wiring
@@ -200,16 +223,20 @@
                     </div>
                 </div>
                 <li>
-                    <a href="./pages/serviceArea.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Service Areas</a>
+                    <a href="./pages/serviceArea.html"
+                        class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Service Areas</a>
                 </li>
                 <li>
-                    <a href="./pages/blog.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Blog</a>
+                    <a href="./pages/blog.html"
+                        class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Blog</a>
                 </li>
                 <li>
-                    <a href="./pages/gallery.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Gallery</a>
+                    <a href="./pages/gallery.html"
+                        class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Gallery</a>
                 </li>
                 <li>
-                    <a href="./pages/contact.html" class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Contact</a>
+                    <a href="./pages/contact.html"
+                        class="text-white text-md hover:text-[var(--color-secondary)] cursor-pointer">Contact</a>
                 </li>
             </ul>
         </div>
@@ -380,7 +407,8 @@
                     <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
                         adipisicing elit. Sed tempora numquam saepe dolorem fugit dicta asperiores alias inventore.</p>
                     <div class="mt-auto"></div>
-                    <a href="./pages/services/ElectricalPanelUpgrades.html" class="no-underline cursor-pointer mt-4 mb-2">
+                    <a href="./pages/services/ElectricalPanelUpgrades.html"
+                        class="no-underline cursor-pointer mt-4 mb-2">
                         <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
                             Read More
                             <span>
@@ -420,7 +448,8 @@
                     <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
                         adipisicing elit. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam.</p>
                     <div class="mt-auto"></div>
-                    <a href="./pages/services/ElectricalSafetyInspections.html" class="no-underline cursor-pointer mt-4 mb-2">
+                    <a href="./pages/services/ElectricalSafetyInspections.html"
+                        class="no-underline cursor-pointer mt-4 mb-2">
                         <p class="mt-2 flex items-center justify-center gap-2 text-[17px] hover:underline text-black">
                             Read More
                             <span>
@@ -438,7 +467,8 @@
                     </div>
                     <p class="text-xl mt-2 text-black">Surge Protection</p>
                     <p class="mt-2 text-[var(--color-textTertiary)] text-[15px]">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit dicta asperiores alias inventore. Perferendis ab voluptatem quo sunt illum corporis, omnis veniam tenetur quae
+                        adipisicing elit dicta asperiores alias inventore. Perferendis ab voluptatem quo sunt illum
+                        corporis, omnis veniam tenetur quae
                         dicta asperiores alias inventore.</p>
                     <div class="mt-auto"></div>
                     <a href="./pages/services/SurgeProtection.html" class="no-underline cursor-pointer mt-4 mb-2">
@@ -476,8 +506,7 @@
 
     <!-- Choose Us Section -->
     <section class="relative">
-        <div
-            class="px-[7%] flex flex-col lg:flex-row z-1 w-full bg-[#fff] mt-24 lg:gap-10  justify-center mb-36">
+        <div class="px-[7%] flex flex-col lg:flex-row z-1 w-full bg-[#fff] mt-24 lg:gap-10  justify-center mb-36">
             <!-- First div (image and small circle) -->
             <div class="relative w-full lg:w-1/2 sm:mb-16 lg:m-0 ">
                 <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/thumb-3-2.jpg" alt=""
@@ -539,8 +568,8 @@
                 </div>
                 <div class="border w-full mt-5"></div>
                 <a href="./pages/about.html"
-                class="w-48 h-[50px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-10 hover:text-white hover:bg-black transition duration-300 ease-in-out flex items-center justify-center">
-                KNOW MORE
+                    class="w-48 h-[50px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-10 hover:text-white hover:bg-black transition duration-300 ease-in-out flex items-center justify-center">
+                    KNOW MORE
                 </a>
             </div>
         </div>
@@ -560,12 +589,12 @@
 
             <div class="flex sm:space-x-4 flex-col sm:flex-row">
                 <a href="./pages/about.html"
-                class="w-52 h-[60px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-black hover:bg-[#fff] transition duration-300 ease-in-out flex items-center justify-center">
-                DISCOVER MORE
+                    class="w-52 h-[60px] bg-[var(--color-secondary)] text-[#fff] font-[500] mt-5 hover:text-black hover:bg-[#fff] transition duration-300 ease-in-out flex items-center justify-center">
+                    DISCOVER MORE
                 </a>
                 <a href="./pages/contact.html"
-                class="w-52 h-[60px] bg-transparent border text-[#fff] font-[500] mt-5 hover:text-white hover:bg-[var(--color-secondary)] hover:border-none transition duration-300 ease-in-out flex items-center justify-center">
-                FIND US
+                    class="w-52 h-[60px] bg-transparent border text-[#fff] font-[500] mt-5 hover:text-white hover:bg-[var(--color-secondary)] hover:border-none transition duration-300 ease-in-out flex items-center justify-center">
+                    FIND US
                 </a>
             </div>
         </div>
@@ -592,13 +621,18 @@
                             class="faq-icon flex text-sm items-center justify-center min-w-6 min-h-6 bg-[var(--color-secondary)] text-white rounded-full transform transition-transform duration-300 group-hover:bg-white group-hover:text-black">
                             <span id="icon-1"><i class="fa-solid fa-plus"></i></span>
                         </span>
-                        <span class="text-[17px] font-[500] group-hover:text-white">What is the return policy and how does it work?</span>
+                        <span class="text-[17px] font-[500] group-hover:text-white">What is the return policy and how
+                            does it work?</span>
                     </button>
                     <div id="faq-1"
                         class="px-6 faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out bg-white">
                         <p class="p-2 text-[var(--color-textTertiary)]">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, doloribus! Eaque tenetur quisquam magnam cupiditate totam omnis? Distinctio, cupiditate, beatae eum consequatur magni, ut quod animi quas nesciunt officia dolorum?
-                            Deserunt nemo ipsum repudiandae. Voluptatum nam excepturi quod, dolore veniam consequuntur porro laborum. Deleniti voluptas amet nemo officiis modi tempore doloremque, beatae laborum debitis laboriosam animi, ea ex suscipit. Similique.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, doloribus! Eaque
+                            tenetur quisquam magnam cupiditate totam omnis? Distinctio, cupiditate, beatae eum
+                            consequatur magni, ut quod animi quas nesciunt officia dolorum?
+                            Deserunt nemo ipsum repudiandae. Voluptatum nam excepturi quod, dolore veniam consequuntur
+                            porro laborum. Deleniti voluptas amet nemo officiis modi tempore doloremque, beatae laborum
+                            debitis laboriosam animi, ea ex suscipit. Similique.
                         </p>
                     </div>
                 </div>
@@ -638,8 +672,12 @@
                     <div id="faq-3"
                         class="px-6 faq-content overflow-hidden max-h-0 transition-all duration-300 ease-in-out bg-white">
                         <p class="p-2 text-[var(--color-textTertiary)]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sunt fuga cumque molestiae expedita facere doloremque? Blanditiis voluptatum enim doloremque aut reprehenderit, suscipit sapiente natus, tempora cupiditate consectetur illum deleniti!
-                            Odio dolorem, totam distinctio ex id explicabo temporibus excepturi cumque architecto? Dolorem aliquid mollitia odio nihil ratione corrupti possimus est, vel similique ullam officiis sint dolorum rem, distinctio ipsam molestias.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sunt fuga cumque
+                            molestiae expedita facere doloremque? Blanditiis voluptatum enim doloremque aut
+                            reprehenderit, suscipit sapiente natus, tempora cupiditate consectetur illum deleniti!
+                            Odio dolorem, totam distinctio ex id explicabo temporibus excepturi cumque architecto?
+                            Dolorem aliquid mollitia odio nihil ratione corrupti possimus est, vel similique ullam
+                            officiis sint dolorum rem, distinctio ipsam molestias.
                         </p>
                     </div>
                 </div>
@@ -786,7 +824,8 @@
                                 </div>
                                 <p
                                     class="text-sm text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800">
-                                    Lorem ipsum dolor sit amet consectetur repellendus? Nostrum voluptas ipsam velit ex adipisicing elit. Adipisci laudantium,
+                                    Lorem ipsum dolor sit amet consectetur repellendus? Nostrum voluptas ipsam velit ex
+                                    adipisicing elit. Adipisci laudantium,
                                     molestias quaerat reprehenderit animi repellendus? Nostrum voluptas ipsam velit ex
                                     quaerat.
                                 </p>
@@ -803,7 +842,8 @@
     <section class="relative">
         <div class="flex flex-col lg:flex-row items-center lg:items-start gap-6 md:gap-0">
             <!-- Left Section with Image -->
-            <div class="lg:w-1/2 w-full flex flex-col md:flex-row justify-between items-center gap-10 md:mb-10 lg:mb-0 lg:py-10 bg-[var(--color-secondary)]">
+            <div
+                class="lg:w-1/2 w-full flex flex-col md:flex-row justify-between items-center gap-10 md:mb-10 lg:mb-0 lg:py-10 bg-[var(--color-secondary)]">
                 <img src="https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/faq-bg.jpg" alt="FAQ Background"
                     class="md:w-1/2 w-full h-[350px] object-cover" />
                 <div class="flex flex-col gap-4 items-center md:items-start  text-center mb-10 md:mb-0 md:text-left">
@@ -816,14 +856,15 @@
                     </button>
                 </div>
             </div>
-    
+
             <!-- Right Section with Parallax Background -->
             <div class="w-full lg:w-1/2 h-[300px] lg:h-[430px] relative overflow-hidden bg-fixed bg-cover flex flex-col md:flex-row"
                 style="background-image: url('https://wp.hixstudio.net/biddut/wp-content/uploads/2024/05/faq-bg.jpg');">
                 <div class="absolute inset-0 bg-black opacity-50"></div>
                 <div class="absolute inset-0 flex items-center justify-center text-center text-white px-4">
                     <p class="text-2xl font-semibold w-[93%] lg:w-[80%] text-md">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.Minima voluptate quam vel. Quo voluptate aperiam porro.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.Minima voluptate quam vel. Quo
+                        voluptate aperiam porro.
                     </p>
                 </div>
             </div>
@@ -849,7 +890,8 @@
                     <!-- Arrow Icon with Slide-down Effect -->
                     <div
                         class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
-                        <a href="./pages/blogs/blog1.html"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                        <a href="./pages/blogs/blog1.html"><i
+                                class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
                     </div>
 
                     <div
@@ -880,7 +922,8 @@
                     <!-- Arrow Icon with Slide-down Effect -->
                     <div
                         class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
-                        <a href="./pages/blogs/blog2.html"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                        <a href="./pages/blogs/blog2.html"><i
+                                class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
                     </div>
 
                     <div
@@ -911,7 +954,8 @@
                     <!-- Arrow Icon with Slide-down Effect -->
                     <div
                         class="w-16 h-16 absolute bg-[var(--color-secondary)] items-center justify-center flex rounded-full transition-transform duration-300 -translate-y-64 transform group-hover:-translate-y-12 z-[11] cursor-pointer">
-                        <a href="./pages/blogs/blog3.html"><i class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
+                        <a href="./pages/blogs/blog3.html"><i
+                                class="fa-solid fa-arrow-right-long text-white text-2xl"></i></a>
                     </div>
 
                     <div
@@ -951,8 +995,7 @@
                     <div class="flex gap-2 flex-col items-start">
                         <div
                             class="text-[var(--color-textSecondary)] flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
-                            <span class="text-[var(--color-secondary)]"><i
-                                    class="fa-solid fa-location-dot"></i>
+                            <span class="text-[var(--color-secondary)]"><i class="fa-solid fa-location-dot"></i>
                             </span>Downtown, Columbus, Ohio
 
                         </div>
@@ -972,28 +1015,32 @@
                     <!-- First Column -->
                     <ul class="space-y-2 text-[var(--color-textTertiary)]">
                         <li class="group">
-                            <a href="./pages/services/ElectricalPanelUpgrades.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/services/ElectricalPanelUpgrades.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
                                 Panel Upgrades
                             </a>
                         </li>
                         <li class="group">
-                            <a href="./pages/services/WiringRewiringService.html" class="cursor-pointer hover:text-[#fff]">
+                            <a href="./pages/services/WiringRewiringService.html"
+                                class="cursor-pointer hover:text-[#fff]">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Wiring
                                 and Rewiring Services
                             </a>
                         </li>
                         <li class="group">
-                            <a href="./pages/services/LightingRepairs.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/services/LightingRepairs.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Lighting
                                 and Repairs
                             </a>
                         </li>
                         <li class="group">
-                            <a href="./pages/services/ElectricalSafetyInspections.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/services/ElectricalSafetyInspections.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Electrical
                                 Safety Inspections
@@ -1004,14 +1051,16 @@
                     <!-- Second Column -->
                     <ul class="space-y-2 text-[var(--color-textTertiary)]">
                         <li class="group">
-                            <a href="./pages/services/SurgeProtection.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/services/SurgeProtection.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Surge
                                 Protection
                             </a>
                         </li>
                         <li class="group">
-                            <a href="./pages/services/TroubleshootingRepair.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/services/TroubleshootingRepair.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Troubleshooting
                                 and Repairs
@@ -1039,11 +1088,13 @@
                         <li class="group">
                             <a href="./pages/serviceArea.html" class="cursor-pointer hover:text-[#fff]">
                                 <i
-                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Service Areas 
+                                    class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Service
+                                Areas
                             </a>
                         </li>
                         <li class="group">
-                            <a href="./pages/blog.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/blog.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Blog
                             </a>
@@ -1051,13 +1102,15 @@
                     </ul>
                     <ul class="space-y-2 text-[var(--color-textTertiary)]">
                         <li class="group">
-                            <a href="./pages/contact.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/contact.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Contact
                             </a>
                         </li>
                         <li class="group">
-                            <a href="./pages/gallery.html" class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <a href="./pages/gallery.html"
+                                class="cursor-pointer hover:text-[#fff] transition duration-300">
                                 <i
                                     class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Gallery
                             </a>
@@ -1112,7 +1165,8 @@
                     <strong>Terms & conditions</strong>
                 </a>
                 |
-                <a href="./pages/privacy.html" class="text-[14px] pl-1 hover:underline cursor-pointer whitespace-nowrap">
+                <a href="./pages/privacy.html"
+                    class="text-[14px] pl-1 hover:underline cursor-pointer whitespace-nowrap">
                     <strong>Privacy Policy</strong>
                 </a>
             </p>
