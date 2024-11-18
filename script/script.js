@@ -61,6 +61,19 @@ document.getElementById("arrowToggle").addEventListener("click", function() {
     }
 });
 
+document.getElementById("arrowToggles").addEventListener("click", function() {
+    const options = document.getElementById("servicesOptions");
+    const icon = this.querySelector("i");
+
+    options.classList.toggle("hidden");
+
+    if (options.classList.contains("hidden")) {
+        icon.classList.replace("fa-chevron-down", "fa-chevron-right");
+    } else {
+        icon.classList.replace("fa-chevron-right", "fa-chevron-down");
+    }
+});
+
 var swiper = new Swiper(".default-carousel", {
     loop: true,
     autoplay: {
